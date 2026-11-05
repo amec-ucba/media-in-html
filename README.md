@@ -1,17 +1,24 @@
-# 💻 Assignment Boilerplate
+# 💻 Media in HTML
 
-A starting point for assignment and exercise repos. It includes submission instructions, editor and Git configuration, and a pull request template so every assignment works the same way.
+Starter files for the CE10: Media coding exercise in Web Design 1. You will embed audio,
+video, and a YouTube player in a web page, style the heading with a Google Font, and publish
+it with GitHub Pages.
+
+This repo also includes the editor and Git configuration and the pull request template that every
+assignment in this course uses.
 
 > [!NOTE]
 > `.editorconfig`, `.gitattributes`, `.gitignore`, `.noai`, and the `.github` folder are
-> setup files that keep assignments consistent. Leave them alone.
+> setup files that keep assignments consistent. Leave them alone. `index.html`,
+> `styles.css`, `reset.css`, and the `audio` and `video` folders are your starter files —
+> keep them in the repo.
 
 ## 📋 Assignment Requirements
 
 > [!IMPORTANT]
 > **Start here: [read ASSIGNMENT.md →](ASSIGNMENT.md)**
 
-It has the requirements, grading criteria, and due date. Read it before you start, and check it again before you submit. This `README` only covers how to publish and submit your work.
+It has the overview, a guide to the companion videos in Canvas, a final checklist, and the grading rubric. Read it before you start, and check it again before you submit. This `README` only covers how to publish and submit your work.
 
 ## 🏁 Getting Started
 
@@ -21,7 +28,7 @@ It has the requirements, grading criteria, and due date. Read it before you star
 
      <img src=".github/images/use-this-template.png" alt="The Use this template button at the top right of the repo page" width="600">
    - Set **Owner** to your GitHub account.
-   - Give it a **Repository name** — use the assignment name, like `assignment-1`.
+   - Give it a **Repository name** — use the assignment name, like `media-in-html`.
 
      <img src=".github/images/create-repo-name.png" alt="The Create a new repository form with Owner set to your username and the Repository name filled in" width="600">
    - Set visibility to **Public** (GitHub Pages needs a public repo on a free account).
@@ -44,14 +51,23 @@ It has the requirements, grading criteria, and due date. Read it before you star
 ## 📂 Where Your Files Go
 
 Create your files in the **root folder** of this repo — the same folder as this README.
-GitHub Pages publishes from the root, so `index.html` has to live there or your site will 404. Group your assets into subfolders:
+GitHub Pages publishes from the root, so `index.html` has to live there or your site will 404.
+The starter files are already in place. You edit `index.html` and `styles.css` and don't need
+to create any new files:
 
 ```
 index.html
-css/style.css
-js/script.js
-images/photo.jpg
+styles.css
+reset.css
+audio/shatner1.mp3
+audio/shatner2.mp3
+video/demi.mp4
+video/demi.webm
+video/demi.ogv
 ```
+
+The media files are grouped into `audio/` and `video/` subfolders, so your `src` paths need
+the folder name, like `audio/shatner2.mp3`. Don't rename or move these files.
 
 ## 🤖 AI Policy
 
@@ -99,12 +115,14 @@ Your work has to be live on the web before you can submit it.
 
    <img src=".github/images/pages-site-live.png" alt="The Your site is live at banner with the site URL highlighted" width="600">
 
-   Confirm the page loads correctly — the right content, no missing images, no broken styles.
+   Confirm the page loads correctly — your Google Font shows, the audio and video play, and
+   the YouTube player works.
 
 **🛠️ Troubleshooting**
 
 - **404 page:** make sure an `index.html` exists in the root of the branch you selected, and that the filename is lowercase.
 - **Old version showing:** Pages caches aggressively. Wait a minute, then hard refresh (<kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>).
+- **Audio or video won't play:** check that the `src` paths include the folder (`audio/` or `video/`) and match the file names exactly, including lowercase letters.
 - **Nothing deployed:** check the **Actions** tab for a failed `pages build and deployment` run.
 
 ## 📬 Submitting the Assignment

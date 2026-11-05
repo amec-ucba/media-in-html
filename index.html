@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding Media</title>
+	<link href="reset.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+	<!-- ⬇ Paste the HTML for your Google Font below ⬇ -->
+
+</head>
+
+<body>
+<div class="wrapper">
+
+<header>
+    <h1>Embedding Media <br> 
+        &amp; Online Resources</h1>
+</header>
+
+<main>
+
+    <section class="media half1">
+        <h2>HTML4 <code>&lt;object&gt;</code></h2> 
+        <p>Until recently, browsers didn't have any built-in ways to handle video or sound, so they required external plug-ins play media files. Those plugins are no longer available and that method doesn't work with the latest versions of HTML. This is an example of the way it used to be done:</p>
+
+        <h3>&quot;Ordinary People&quot; by William Shatner</h3>
+        <object data="audio/shatner1.mp3" type="audio/quicktime">
+            <param name="controller" value="true"> 
+        </object>
+
+    </section>
+
+    <section class="media half2">
+        <h2>HTML5 <code>&lt;audio&gt;</code></h2>
+        <p>HTML5 has a built-in &lt;audio&gt; element and all web browsers support <code>.mp3</code> files, so it's pretty easy to embed audio  in that format.</p>
+        <h3>"I Can't Get Behind That" by William Shatner &amp; Henry Rollins</h3>
+        <!-- ⬇ Add your <audio> element here ⬇ -->
+        
+
+    </section>
+
+
+    <section class="media half1">
+        <h2>HTML5 <code>&lt;video&gt;</code></h2>
+        <p>The good news is that HTML5 has a built-in &lt;video&gt; element, so no browser plug-ins are required. The bad new is that the various browsers don't agree on what video formats should be supported.</p>
+        <p>That means you should offer your video in multiple file formats (.mp4, .webm, .ogv) to make sure it can play in all browsers. This can be done with the &lt;source&gt; element.</p>
+        <!-- ⬇ Add your <video> and <source> elements here ⬇ -->
+        
+
+    </section>
+
+    <section class="media full"> 
+        <h2>Embed YouTube Videos</h2>
+        <p>YouTube players will be visible in the VSCode preview window, but will give an error if you try to play them there. You'll need to open the page in an actual browser to play it.</p>
+        <p>You may find some embedded YouTube videos don't work and say "Video Unavailable." The most common cause is when the video contains copyrighted music, then for legal reasons YouTube blocks it from playing when embedded.</p>
+        <!-- ⬇ Add the embed code of a YouTube video here ⬇ -->
+                        
+
+    </section>
+
+
+
+
+    <section class="media other full">
+        <h2>Embed Other Kinds of Media</h2>
+        
+        <ul>
+            <li><a href="https://help.instagram.com/620154495870484" target="_blank">Instragram Posts</a></li>
+            <li><a href="https://help.twitter.com/en/using-twitter/embed-twitter-feed" target="_blank">Twitter Feed</a></li>
+            <li><a href="https://support.google.com/calendar/answer/41207?hl=en" target="_blank">Google Calendar</a></li>
+            <li><a href="https://support.google.com/maps/answer/144361?co=GENIE.Platform%3DDesktop&hl=en" target="_blank">Google Map</a></li>
+            <li><a href="https://www.cognitoforms.com/" target="_blank">Contact Forms</a></li>
+            <li><a href="https://developers.tiktok.com/doc/embed-videos/">TikTok Video</a></li>
+        </ul>
+        
+    </section>    
+
+    <section class="attributes half2">
+        <h2>Optional Video Attributes:</h2>
+        <dl>
+            <dt>controls</dt>
+            <dd>If this attribute is present, the browser will buttons to control the video. Without this attribute the user won't be able to play/pause the video or control the volume. </dd>
+
+            <dt>autoplay</dt>
+            <dd>With this attribute the video automatically begins to play back as soon as it loads. This is annoying and probably shouldn't be used.</dd>
+
+            <dt>loop</dt>
+            <dd>Automatically loops back to the beginning when it reaches the end of the video.</dd>
+
+            <dt>poster</dt>
+            <dd>A URL for an image file that will show before you hit play. Without this attribute it will show the first frame of video.</dd>
+
+            <dt>height</dt>
+            <dd>Sets the height of the video player.</dd>
+
+            <dt>width</dt>
+            <dd>Sets the width of the video player.</dd>
+
+            <dt>preload</dt>
+            <dd>Tells the browser to start downloading the video file before the user hits the play button. </dd>
+        </dl>
+    </section>
+    
+<!-- 
+    <section class="files">
+        <h2>File Types</h2>
+        <dl>
+            <dt>.MP4</dt>
+            <dd>MPEG-4 and H.264 codec video. Widely supported across many platforms.</dd>
+        
+            <dt>.WEBM</dt>
+            <dd>Open media format that uses the VP8 codec. Sponsored by Google. Gaining wider support by most browsers.</dd>
+            
+            <dt>.OGV</dt>
+            <dd>Open-source video format that uses the Theora codec. A bit obscure but supported by Chrome and Firefox.</dd>
+        
+            <dt>.FLV</dt>
+            <dd>Flash video. This used to be the dominant video format on the web but most browsers nolonger support the Flash plugin. Not supported on any mobile devices.</dd>
+            
+            <dt>.MOV</dt>
+            <dd>QuickTime. Common on Macs and iOS mobile devices. File sizes are not optimal for on-line video.</dd>
+        
+            <dt>.WMV</dt>
+            <dd>Windows media files. Large file sizes and poor quality video. Shouldn't be used on the web. Not supported by Macs or iOS mobile devices.</dd>
+        
+            <dt>.AVI</dt>
+            <dd>Microsoft's original video format. Very old. Huge file sizes. Should not be used for on-line video. Not supported on Macs or mobile devices.</dd>
+            
+        </dl>
+        </section> -->
+
+</main>
+
+</div> 
+</body>
+</html>
